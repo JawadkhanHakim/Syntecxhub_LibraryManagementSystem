@@ -1,0 +1,36 @@
+package com.library;
+
+public class Book {
+    private int id;
+    private String title;
+    private String author;
+    private String isbn;
+    private int quantity;
+
+    public Book(int id, String title, String author, String isbn, int quantity) {
+        this.id = id;
+        this.title = title;
+        this.author = author;
+        this.isbn = isbn;
+        this.quantity = quantity;
+    }
+
+    public Book(String title, String author, String isbn, int quantity) {
+        this.title = title;
+        this.author = author;
+        this.isbn = isbn;
+        this.quantity = quantity;
+    }
+
+    public int getId() { return id; }
+    public String getTitle() { return title; }
+    public String getAuthor() { return author; }
+    public String getIsbn() { return isbn; }
+    public int getQuantity() { return quantity; }
+
+    @Override
+    public String toString() {
+        return "ID: " + id + " | Title: " + title + " | Author: " + author +
+                " | ISBN: " + isbn + " | Quantity: " + quantity;
+    }
+}
